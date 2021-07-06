@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <h1 style="font-size: 55px;">Savva Lambin</h1>
+  <h2 style="font-style: italic; padding-bottom: 20px; margin-left: 350px;">Design & Solutions</h2>
+</div>
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <ul style="list-style:none; position: sticky; top: 50px">
+      <li><a href="projects.html">Projects</a></li>
+      <br>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </div>
+  <div class="main">
+      <div class="banner" style="position: sticky; top: 0">
+          <div class="container">
+              <div class="sliding-banner">
+                  <div class="bannertext" style="word-spacing: 20px;">
+                    HTML5 JavaScript React MongoDB Express Node Git Solidity Web3 Python Sketch Photoshop  
+                  </div>
+              </div>
+      </div>
+      </div>
+    <div class="card">
+      <img src="images/collective-logo.png" style="height: 80px; margin-bottom: 10px; display: block;">
+
+      <div style="clear: both; padding-bottom: 75px;">
+    <h3 style="display:block; float: right; padding-right: 90px">UX/ UI</h3>
+      
+      <h3 style="display: block; padding-left: 5px; float: left;">Manage, Read and Report News</h3>
+        </div>
+
+
+    <p class="project-text" style="margin-bottom: 50px; line-height: 1.6; margin: auto; display: block; padding-bottom: 15px">I wanted to create an app that displayed accurate news. My approach to achieving this was to build it using smart contracts on the Ethereum Network. The choice to use a decentralised app infrastructure was due to the data being immutable and transactions being a fraction of fiat currency. This is not achievable using third party payment systems today. My thought was that if a service allowed you to share updates on the world around you and encouraged users to donate to promote the notions they found accurate; a space could be created without spam and more accurate news. However, I soon discovered that this was a very ambitious feat; partly due to physical limitations of the EVM and blockchain technology and partly because of underestimating human behaviour. I was still interested in seeing how I could design the user-experience with a suitable user-interface to achieve such a goal so I decided to create this as a full UX/UI project with descriptions of first-approach, basic application architecture.</p>
+<h2 style="margin-bottom: 40px">Creating a User:</h2>
+<div class="SignUpPrompt" style="text-align: center;">
+<img src="images/SignUp.jpg" class="SignUp">
+<img src="images/LogIn.jpg" class="SignUp">
+</div>
+<p style="margin-bottom: 50px; line-height: 1.6;">Users register with username, email and password. The user data is a one-to-many relationship where one user has many Feeds and Posts.</p>
+
+<h2 style="margin-bottom: 40px">Creating a Post:</h2>
+<div class="collective-card">
+<img src="images/Create-Post.jpg" style="border: solid 1px grey; height: 1000px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<p style="margin-bottom: 50px; line-height: 1.6;">The Post model contains fields which include: headline, textBody, topicTags, timeCreated, balance and fonts. Headlines are the initial thing users read, which are displayed on the user interface of the Feed in full- this is achieved by setting a character limit. The textBody is the content of the post. topicTags are used to sort the Post accordingly using a Sort Function when viewing a feed. Fonts are used to personalise your post (this would not be included in the MVP design of the app.) timeCreated is a value which is used along with balance in a calculation to determine the popularity of the Post. Balance is the recorded amount of donations to the Post. Each Post has its own id.</p>
+</div>
+
+<h2 style="margin-bottom: 40px">Viewing a Post:</h2>
+<img src="images/Show-Post.jpg" style="border: solid 1px grey; height: 650px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<p style="margin-bottom: 50px; line-height: 1.6;">The headlines and a portion of the Post’s body can be seen when looking at a Feed. The higher rated posts reveal larger amounts of the Post’s Text Body. Clicking on the Post takes you to the Show Post page where the entirety of the post can be seen along with the option to save and donate to the Post.</p>
+
+
+<h2 style="margin-bottom: 40px">Creating a Feed:</h2>
+<img src="images/Create-Feed.jpg" style="border: solid 1px grey; height: 1000px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<p style="margin-bottom: 50px; line-height: 1.6;">The Feed model has fields which include topics and sortBy. On the User Interface you select what topics you would like your feed to contain, you can select multiple topics. You can choose how the created Feed is sorted using the Sort By selector. One User can create many Feeds so you can have specific Feeds dedicated to specific types of content.
+</p>
+<h4>Sort By Selector:</h4>
+<p style="margin-bottom: 50px; line-height: 1.6;">Choosing to sort by 'Popular' arranges the Posts by popularity which is done through an algorithm that determines a rate by looking at the balance of the post and dividing it by the amount of time it has been since it was created. Sorting by 'New' orders the Feed by the most recent posts only. You can also set a specific time when selecting New (in the last hour/ day/ month.)</p>
+
+
+<h2>View Feeds:</h2>
+<div class="HomePages" style="text-align:center;">
+  <img src="images/Home-Page.jpg" class="HomePageImg">
+  <img src="images/Home-Page2.jpg" class="HomePageImg">
+  <img src="images/Home-Page3.jpg" class="HomePageImg">
+  <img src="images/Home-Page4.jpg" class="HomePageImg">
+</div>
+<p style="margin-bottom: 50px; line-height: 1.6;">The App looks at which created Feed of yours you are viewing and renders the appropriate information. The data stored using the Feed model is processed through a sorting function and renders the HTML onto the page (React would be used for this.) The Posts are displayed continuously and are rendered On Scroll. The first Page Render contains one single post, the second contains two posts, the third contains four and from the fourth Page Render onwards displays a maximum of 8 posts. I chose to order the pages with an increasing amount of posts up to 8 to highlight the ones which were deemed ‘more important’ by the users when the feed is set to look at the most popular posts. The App uses the space of the screen to highlight importance.</p>
+
+<h2 style="margin-bottom: 40px">Saving a Post and Saved Posts Page:</h2>
+<img src="images/Saved-Posts.jpg" style="border: solid 1px grey; height: 650px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<p style="margin-bottom: 50px; line-height: 1.6;">You can view saved posts by Topic, Feed or All. When viewing the Saved Posts page through a feed, a sorting function looks at only the data from the savedPosts Field of the User model which is a value of Post and renders the data the same way as the Viewing Feeds page.</p>
+
+<h2 style="margin-bottom: 40px">Donating to Posts:</h2>
+<img src="images/Donate-Prompt.jpg" style="border: solid 1px grey; height: 650px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<p style="margin-bottom: 50px; line-height: 1.6;">Donating to a post sends the donation to the creator of the post but is also recorded as a value of balance in the Post model. Users are encouraged to send donations to posts which they would like others to see since posts with a higher balance are arranged higher in the feed.</p>
+
+<h2>Analysis and Review:</h2>
+<p style="margin-bottom: 50px; line-height: 1.6;">I started this project with the development of smart contracts on the Ethereum Network. An account could send transactions to posts which were then sent to the creator of the post, however, problems began to arise when an attempt was made to use the blockchain data to order the posts. This is because such operations require a gas fee which would not have been economical for the users or the app itself. I suspect a solution to this problem would be to use oracles to communicate the blockchain data with the database of the application. This project shows how an auto-governed newsfeed can exist on the assumption that donations can be made easily. In reality, the donations are subject to high transaction fees which I believe are unappealing to the user. You can substitute the donation feature of the app with likes or votes but this will not display an accurate representation of reliable content as this method can be gamed. Nonetheless, I enjoyed looking at how the data can be moved around and organised using the User Interface I designed and thinking about the fluency of the User Experience.</p>
+
+<p>Disclaimer: The Posts shown in this project are sample articles I collected from Reuters. Here are links to the original content from the writers:</p>
+
+<a href="url">https://www.reuters.com/business/autos-transportation/uber-app-us-enable-users-book-vaccines-rental-cars-2021-04-28/</a>
+<a href="url">https://www.reuters.com/technology/google-battles-landmark-uk-class-action-over-alleged-iphone-tracking-2021-04-28/</a>
+<a href="url">https://www.reuters.com/business/autos-transportation/tesla-says-bitcoin-investment-worth-248-billion-2021-04-28/</a>
+<a href="url">https://www.reuters.com/technology/spotify-results-beat-estimates-more-users-tune-2021-04-28/</a>
+<a href="url">https://www.reuters.com/business/samsungs-lee-family-pay-more-than-12-trln-won-inheritance-taxes-2021-04-28/</a>
+<a href="url">https://www.reuters.com/technology/no-more-kebabs-bitcoins-turkeys-crypto-payment-ban-looms-2021-04-28/</a>
+<a href="url">https://www.reuters.com/world/india/war-rooms-oxygen-indias-it-companies-scramble-handle-covid-19-surge-2021-04-28/</a>
+<a href="url">https://www.reuters.com/technology/grabs-nasdaq-debut-test-its-40-bln-valuation-set-roadmap-spac-hopefuls-2021-04-28/</a>
+<a href="url">https://www.reuters.com/technology/shopify-revenue-more-than-doubles-online-boom-2021-04-28/a>
+<a href="url">https://www.reuters.com/technology/discoverys-global-paid-streaming-subscriber-count-hits-15-mln-2021-04-28/a>
+<a href="url">https://www.reuters.com/technology/google-parent-alphabet-beats-sales-estimates-ad-spending-soars-2021-04-27/</a>
+<a href="url">https://www.reuters.com/technology/taiwan-says-china-waging-economic-warfare-against-tech-sector-2021-04-28/</a>
+<a href="url">https://www.reuters.com/technology/taiwan-chipmaker-umc-spend-36-bln-expand-capacity-2021-04-28/</a>
+<a href="url">https://www.reuters.com/technology/microsoft-beats-quarterly-revenue-expectations-2021-04-27/</a>
+<a href="url">https://www.reuters.com/technology/digital-currency-ether-hits-record-high-2021-04-27/</a>
+
+
+</div>
+
+    <div class="card">
+    <h2>Reddit Scraper</h2>
+    <img src="images/reddit-icon.png" style="height:150px; padding-bottom: 20px;">
+    <h3 style="display:block; float: right; padding-right: 90px;">Python</h3>    
+    <h3>Search Through Subreddits Using Keywords</h3>
+    <p style="line-height: 1.6;">A friend of mine approached me to create a reddit scraper for him during the GME stock boom. He wanted a way to search through posts, comments and replies in the r/wallstreetbets subreddit and return the ones containing specified financial key terms. He wanted this done quickly so I drew up this solution for him overnight.</p>
+    <p style="margin-bottom: 50px; line-height: 1.6;">I used the PRAW module in Python to use the Reddit API and then converted the data into an excel spread sheet to send on to him. If I were to have more time, I would have designed my own API and a web page interface for the users (in this case my friend) to input the keywords and search through the selected subreddit.</p>
+    <img src="images/python-code.png" style="width: 50%; border: solid 1px grey; margin: auto; display: block; margin-bottom: 5px">
+    <p style="font-style: italic; text-align: center; padding-bottom: 30px;">Python code using the PRAW module to search through posts containg the keyword "beta." posts, url and postNumber are stored in empty list variables which are then used with the xlsxwriter module to create an xlsx file.</p>
+    <img src="images/python-terminal-data.png" style="width: 80%; border: solid 1px grey; margin: auto; display: block; margin-bottom: 5px">
+    <p style="font-style: italic; text-align: center; padding-bottom: 30px;">Testing the retrieved data in the terminal</p>
+    <img src="images/python-xlsx.png" style="width: 80%; border: solid 1px grey; margin: auto; display: block; margin-bottom: 5px">
+    <p style="font-style: italic; text-align: center; padding-bottom: 30px;">xlsx file created</p>
+      </div>
+
+
+      <div class="card">
+      <img src="images/contact-logo.png" style="height: 80px; margin-bottom: 10px; display: block;">
+    <h3 style="display:block; float: right; padding-right: 90px">MERN</h3>    
+    <h3 style="float: left">An application to trade virtual business cards</h3>
+        <img src="images/contact.png" style="width: 100%; border: solid 1px grey">
+    <p style="font-style: italic; text-align: center; padding-bottom: 30px;">User Interface of Creating a Card</p>
+
+    <p style="margin-bottom: 50px; line-height: 1.6;">How it works:
+        Users register and are prompted to create their profile (Virtual Business Card.) The fields contain Name, Job title, email address and telephone number.
+        After your profile has been created you can request other user’s cards by sending them a text message.
+        Your collected cards are stored in your collection to view at any time you want.</p>
+        
+         <p style="margin-bottom: 50px; line-height: 1.6;">React was used  to build the front-end and an Express setup was used for the back-end. An SMS API called Twilio was used for the trading aspect between users. The app uses a form to create the user’s own personalised card, allowing them to choose the font, font colour and card colour for their business card. The card also includes links to the users LinkedIn and Twitter profiles if they wish to add them. I’m particularly happy with the styling for this project; the card is updated live as the user fills out their customisation options using inline styles. When a user trades a card with another user, both cards are added to the respective user’s index; this was done through a function called cardsTrade in the controller for the cards. Technologies include: React, Express, JavaScript, jQuery, HTML, SASS, Bootstrap, Web Hack, npm, Yarn, Git, Github, Heroku, Insomnia, mocha, chai.</p>
+
+    <img src="images/contact-inline-style.png" style="width: 40%; border: solid 1px grey; margin: auto; display: block; margin-bottom: 5px">
+    <img src="images/contact-inline-style2.png" style="width: 50%; border: solid 1px grey; margin: auto; display: block; margin-bottom: 5px">
+    <img src="images/contact-inline-style3.png" style="width: 40%; border: solid 1px grey; margin: auto; display: block; margin-bottom: 5px">
+    <p style="font-style: italic; text-align: center; padding-bottom: 30px;">Inline Styling Code to update the changes to the card live</p>
+
+
+        
+        <p style="margin-bottom: 50px; line-height: 1.6;">The points mentioned above are how far I got developing the app as an MVP.
+        Ideally you’d want a smoother user experience, one that doesn’t involve entering the persons phone number in order to trade cards. If I were to continue building this app, the next iteration would have an API which uses Near Field Communication technology instead of the Twilio API for the Cards to be traded “between devices” at close proximity. I would also develop this iteration mobile-first.
+        </p>
+        </div>
+
+  </div>
+  <div class="side2">
+    <ul style="list-style:none; position: sticky; top: 50px">
+    <li><a href="projects.html">Projects</a></li>
+    <br>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+</div>
+</div>
+
+<!-- Footer -->
+<!-- <div class="footer">
+  <h2>Footer</h2>
+</div> -->
+</body>
+</html>
