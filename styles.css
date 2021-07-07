@@ -130,7 +130,6 @@ h1 {
     flex-direction: column;
   } */
 
-
   .side {
     display: none;
   }
@@ -143,7 +142,7 @@ h1 {
     display: flex;
     border-top: solid 1px;
     position: sticky;
-    bottom: 2px;
+    bottom: 0;
   }
 
   .side2 ul {
