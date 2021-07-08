@@ -47,17 +47,17 @@
 
 <h2 style="margin-bottom: 40px">Creating a Post:</h2>
 <div class="collective-card">
-<img src="images/Create-Post.jpg" style="border: solid 1px grey; height: 1000px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<img src="images/Create-Post.jpg" class="project-images3" style="border: solid 1px grey; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
 <p style="margin-bottom: 50px; line-height: 1.6;">The Post model contains fields which include: headline, textBody, topicTags, timeCreated, balance and fonts. Headlines are the initial thing users read, which are displayed on the user interface of the Feed in full- this is achieved by setting a character limit. The textBody is the content of the post. topicTags are used to sort the Post accordingly using a Sort Function when viewing a feed. Fonts are used to personalise your post (this would not be included in the MVP design of the app.) timeCreated is a value which is used along with balance in a calculation to determine the popularity of the Post. Balance is the recorded amount of donations to the Post. Each Post has its own id.</p>
 </div>
 
 <h2 style="margin-bottom: 40px">Viewing a Post:</h2>
-<img src="images/Show-Post.jpg" style="border: solid 1px grey; height: 650px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<img src="images/Show-Post.jpg" class="project-images2" style="border: solid 1px grey; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
 <p style="margin-bottom: 50px; line-height: 1.6;">The headlines and a portion of the Post’s body can be seen when looking at a Feed. The higher rated posts reveal larger amounts of the Post’s Text Body. Clicking on the Post takes you to the Show Post page where the entirety of the post can be seen along with the option to save and donate to the Post.</p>
 
 
 <h2 style="margin-bottom: 40px">Creating a Feed:</h2>
-<img src="images/Create-Feed.jpg" style="border: solid 1px grey; height: 1000px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<img src="images/Create-Feed.jpg" class="project-images3" style="border: solid 1px grey; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
 <p style="margin-bottom: 50px; line-height: 1.6;">The Feed model has fields which include topics and sortBy. On the User Interface you select what topics you would like your feed to contain, you can select multiple topics. You can choose how the created Feed is sorted using the Sort By selector. One User can create many Feeds so you can have specific Feeds dedicated to specific types of content.
 </p>
 <h4>Sort By Selector:</h4>
@@ -74,11 +74,11 @@
 <p style="margin-bottom: 50px; line-height: 1.6;">The App looks at which created Feed of yours you are viewing and renders the appropriate information. The data stored using the Feed model is processed through a sorting function and renders the HTML onto the page (React would be used for this.) The Posts are displayed continuously and are rendered On Scroll. The first Page Render contains one single post, the second contains two posts, the third contains four and from the fourth Page Render onwards displays a maximum of 8 posts. I chose to order the pages with an increasing amount of posts up to 8 to highlight the ones which were deemed ‘more important’ by the users when the feed is set to look at the most popular posts. The App uses the space of the screen to highlight importance.</p>
 
 <h2 style="margin-bottom: 40px">Saving a Post and Saved Posts Page:</h2>
-<img src="images/Saved-Posts.jpg" style="border: solid 1px grey; height: 650px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<img src="images/Saved-Posts.jpg" class="project-images2" style="border: solid 1px grey; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
 <p style="margin-bottom: 50px; line-height: 1.6;">You can view saved posts by Topic, Feed or All. When viewing the Saved Posts page through a feed, a sorting function looks at only the data from the savedPosts Field of the User model which is a value of Post and renders the data the same way as the Viewing Feeds page.</p>
 
 <h2 style="margin-bottom: 40px">Donating to Posts:</h2>
-<img src="images/Donate-Prompt.jpg" style="border: solid 1px grey; height: 650px; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
+<img src="images/Donate-Prompt.jpg" class="project-images2" style="border: solid 1px grey; margin-bottom: 10px; margin: auto; display: block; margin-bottom: 40px">
 <p style="margin-bottom: 50px; line-height: 1.6;">Donating to a post sends the donation to the creator of the post but is also recorded as a value of balance in the Post model. Users are encouraged to send donations to posts which they would like others to see since posts with a higher balance are arranged higher in the feed.</p>
 
 <h2>Analysis and Review:</h2>
