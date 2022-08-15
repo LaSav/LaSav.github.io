@@ -255,21 +255,19 @@ font-weight: 800;
   }
 
   .copy-thumb {
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 2px solid gray;
   }
 
   .copy-thumb:hover {
-    border: 1px solid #a9060d;
+    border: 2px solid #a9060d;
   }
 
   .dev-thumb {
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 2px solid gray;
   }
 
   .dev-thumb:hover {
-    border: 1px solid #060DA9;
+    border: 2px solid #060DA9;
   }
 
   .about-side-text {
