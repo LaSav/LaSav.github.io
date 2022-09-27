@@ -11,48 +11,50 @@
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
                 <link rel="stylesheet" href="styles.css">
             </head>
-<body>
-        <div class="row py-2" style="background-color: #060DA9; color: white; position: sticky; top: 0;">
-            <div class="home col-sm-3 text-center text-nowrap"><a class="home-link" href="index.html" style="text-decoration: none; color: white;">Savva Lambin</a></div>
-            <div class="d-flex col-sm-2 text-center align-items-center justify-content-center offset-sm-5"><a class="menu-link" href="webdev.html" style="text-decoration: none; color: white; font-size: 15px;">Projects</a></div>
-            <div class="d-flex col-sm-2 justify-content-center align-items-center"><a class="menu-link" href="contact-savva.html" style="text-decoration: none; color: white; font-size: 15px;">Contact</a></div>
-        </div>
-    <main class="container">
-                <div class="row">
-                    <div class="article col-sm-9 mx-auto">
-                                    <div class="col-sm-8 mx-auto text-center py-4">
-                                        <h1 class="contact-logo text-center" style="font-family: 'Work Sans', sans-serif; font-size: 15vh;">CONTACT</h1>
-                                        <h3>An application to trade virtual business cards</h3>
-                                        <h4>MERN</h4>  
-                                    </div>
-                                <div class="row justify-content-center">
-                                        <div class="pb-4 text-center"><img src="images/contact.png" class="img-fluid" style="border: solid 1px grey;"></div>
-                                </div>
-                        <p>How it works:
-                                Users register and are prompted to create their profile (Virtual Business Card.) The fields contain Name, Job title, email address and telephone number.
-                                After your profile has been created you can request other user’s cards by sending them a text message.
-                                Your collected cards are stored in your collection to view at any time you want.</p>
-                        <p>React was used  to build the front-end and an Express setup was used for the back-end. An SMS API called Twilio was used for the trading aspect between users. The app uses a form to create the user’s own personalised card, allowing them to choose the font, font colour and card colour for their business card. The card also includes links to the users LinkedIn and Twitter profiles if they wish to add them. I’m particularly happy with the styling for this project; the card is updated live as the user fills out their customisation options using inline styles. When a user trades a card with another user, both cards are added to the respective user’s index; this was done through a function called cardsTrade in the controller for the cards. Technologies include: React, Express, JavaScript, jQuery, HTML, SASS, Bootstrap, Web Hack, npm, Yarn, Git, Github, Heroku, Insomnia, mocha, chai.</p>
-                        <div class="row justify-content-center">
-                                <div class="col-sm-7 pt-4 text-center"><img src="images/Contact-inline-style.png" class="img-fluid" style="border: solid 1px grey;"></div>
-                        </div>
-                        <div class="row justify-content-center">
-                                <div class="col-sm-7 pt-4 text-center"><img src="images/Contact-inline-style2.png" class="img-fluid" style="border: solid 1px grey;"></div>
-                        </div>
-                        <div class="row justify-content-center">
-                                <div class="col-sm-7 pt-4 text-center"><img src="images/Contact-inline-style3.png" class="img-fluid" style="border: solid 1px grey;"></div>
-                        </div>
-                                <p class="text-center" style="font-style: italic;">Inline Styling Code to update the changes to the card live</p>
-                        <p>The points mentioned above are how far I got developing the app as an MVP.
-                                Ideally you’d want a smoother user experience, one that doesn’t involve entering the persons phone number in order to trade cards. If I were to continue building this app, the next iteration would have an API which uses Near Field Communication technology instead of the Twilio API for the Cards to be traded “between devices” at close proximity. I would also develop this iteration mobile-first.</p>
+            <body>
+                <div class="container-fluid" style="position: sticky; top: 0;">
+                    <div class="row py-2" style="background-color: #060DA9; color: white;">
+                        <div class="home col-sm-3 text-center text-nowrap"><a class="home-link" href="index.html" style="text-decoration: none; color: white;">Savva Lambin</a></div>
+                        <div class="d-flex col-sm-2 text-center align-items-center justify-content-center offset-sm-5"><a class="menu-link" href="webdev.html" style="text-decoration: none; color: white; font-size: 15px;">Projects</a></div>
+                        <div class="d-flex col-sm-2 justify-content-center align-items-center"><a class="menu-link" href="contact-savva.html" style="text-decoration: none; color: white; font-size: 15px;">Contact</a></div>
                     </div>
-                </div>
-                <div class="row py-5" style="font-family: 'DM Sans', sans-serif;">
-                                <div class="col py-4 text-center"><a class="dev-link" href ="webdev.html">Back to Projects</a></div>
-                        </div>
-    </main>
-    <footer class="footer text-center py-2 pt-4 align-items-center" style="background-color: #060DA9; color:white; font-family: 'DM Sans', sans-serif;">
-        <p>Reach me at <a style="color:white; text-decoration: none;" href="mailto:savva.lambin@gmail.com">savva.lambin@gmail.com</a></p>
-        </footer>
-</body>
+            </div>
+                <main class="container">
+                            <div class="row">
+                                <div class="article col-sm-9 mx-auto">
+                                                <div class="col-sm-8 mx-auto text-center py-4">
+                                                    <h1 class="contact-logo text-center" style="font-family: 'Work Sans', sans-serif; font-size: 15vh;">CONTACT</h1>
+                                                    <h3>An application to trade virtual business cards</h3>
+                                                    <h4>MERN</h4>  
+                                                </div>
+                                            <div class="row justify-content-center">
+                                                    <div class="pb-4 text-center"><img src="images/contact.png" class="img-fluid" style="border: solid 1px grey;"></div>
+                                            </div>
+                                    <p>How it works:
+                                            Users register and are prompted to create their profile (Virtual Business Card.) The fields contain Name, Job title, email address and telephone number.
+                                            After your profile has been created you can request other user’s cards by sending them a text message.
+                                            Your collected cards are stored in your collection to view at any time you want.</p>
+                                    <p>React was used  to build the front-end and an Express setup was used for the back-end. An SMS API called Twilio was used for the trading aspect between users. The app uses a form to create the user’s own personalised card, allowing them to choose the font, font colour and card colour for their business card. The card also includes links to the users LinkedIn and Twitter profiles if they wish to add them. I’m particularly happy with the styling for this project; the card is updated live as the user fills out their customisation options using inline styles. When a user trades a card with another user, both cards are added to the respective user’s index; this was done through a function called cardsTrade in the controller for the cards. Technologies include: React, Express, JavaScript, jQuery, HTML, SASS, Bootstrap, Web Hack, npm, Yarn, Git, Github, Heroku, Insomnia, mocha, chai.</p>
+                                    <div class="row justify-content-center">
+                                            <div class="col-sm-7 pt-4 text-center"><img src="images/Contact-inline-style.png" class="img-fluid" style="border: solid 1px grey;"></div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                            <div class="col-sm-7 pt-4 text-center"><img src="images/Contact-inline-style2.png" class="img-fluid" style="border: solid 1px grey;"></div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                            <div class="col-sm-7 pt-4 text-center"><img src="images/Contact-inline-style3.png" class="img-fluid" style="border: solid 1px grey;"></div>
+                                    </div>
+                                            <p class="text-center" style="font-style: italic;">Inline Styling Code to update the changes to the card live</p>
+                                    <p>The points mentioned above are how far I got developing the app as an MVP.
+                                            Ideally you’d want a smoother user experience, one that doesn’t involve entering the persons phone number in order to trade cards. If I were to continue building this app, the next iteration would have an API which uses Near Field Communication technology instead of the Twilio API for the Cards to be traded “between devices” at close proximity. I would also develop this iteration mobile-first.</p>
+                                </div>
+                            </div>
+                            <div class="row py-5" style="font-family: 'DM Sans', sans-serif;">
+                                            <div class="col py-4 text-center"><a class="dev-link" href ="webdev.html">Back to Projects</a></div>
+                                    </div>
+                </main>
+                <footer class="footer text-center py-2 pt-4 align-items-center" style="background-color: #060DA9; color:white; font-family: 'DM Sans', sans-serif;">
+                    <p>Reach me at <a style="color:white; text-decoration: none;" href="mailto:savva.lambin@gmail.com">savva.lambin@gmail.com</a></p>
+                    </footer>
+            </body>
 </html>
