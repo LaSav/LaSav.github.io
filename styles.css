@@ -291,17 +291,17 @@ font-weight: 800;
 }
 
 .inner {
-  background: linear-gradient(to left, #060DA9 50%, transparent 0);
+  background: linear-gradient(to right, #060DA9 50%, transparent 0);
   background-size: 200% 100%;
-  background-position: left;
-  animation: makeItfadeIn 2.5s forwards;
+  background-position: right;
+  animation: makeItfadeIn 1.5s forwards;
 }
 
 .inner2 {
-  background: linear-gradient(to right, #a9060d 50%, transparent 0);
+  background: linear-gradient(to right, #ee0812 50%, transparent 0);
   background-size: 200% 100%;
   background-position: right;
-  animation: makeItfadeIn2 2.5s forwards;
+  animation: makeItfadeIn2 1.5s forwards;
 }
 
 .inner3 {
@@ -318,10 +318,108 @@ font-weight: 800;
   animation: makeItfadeIn4 1.55s forwards;
 }
 
+.skill-row {
+  height: 100vh;
+}
+
+.heading-anim {
+  /* animation: color-change 10s infinite; */
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+/* @keyframes color-change {
+  0% { color: #ee0812; }
+  50% { color: #fe8217; }
+  100% { color: #ee0812; }
+} */
+
+.navbar {
+  background-color: white;
+}
+
+.dropdown-menu {
+  border: solid 1px black;
+  border-radius: 0;
+}
+
+.dropdown-divider {
+  border: solid 0.5px black;
+}
+
+.list-item a {
+  text-decoration: none;
+  padding-top: 20px;
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.list-item {
+  font-size: 2.1vh;
+  padding-top: 0;
+}
+
+.list-item a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ee0812;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.list-item a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #ee0812;
+}
+
+.list-item2 a {
+  text-decoration: none;
+  padding-top: 20px;
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.list-item2 {
+  font-size: 2.1vh;
+  padding-top: 0;
+}
+
+.list-item2 a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #060DA9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.list-item2 a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #060DA9;
+}
+
 
 @keyframes makeItfadeIn {
   100% {
-    background-position: right;
+    background-position: left;
   }
 }
 
@@ -394,6 +492,9 @@ font-weight: 800;
   }
   .outer {
     background-color: white;
+  }
+  .skill-row {
+    height: 100%;
   }
 }
 

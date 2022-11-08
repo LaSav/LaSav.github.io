@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MERN Application</title>
+    <link rel="icon" href="../images/portfolio-tab.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lexend+Deca:wght@800&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="border-bottom: solid 1px #060da9"
+      data-aos="fade-down"
+      data-aos-delay="1500"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/portfolio-tab.png" style="height: 35px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../marketing/copywriting.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: black"
+              >
+                Marketing
+              </a>
+              <ul class="dropdown-menu" style="border-color: black">
+                <li>
+                  <a class="dropdown-item" href="../marketing/copywriting.html"
+                    >Overview</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" style="border-color: black" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../marketing/copywriting-modern-marketings-glue.html"
+                    >Modern Marketing's Glue</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../marketing/the-value-in-validating-your-product.html"
+                    >The Value in Validating Your Product</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../marketing/bound-copy.html"
+                    >Bound: SaaS Startup Landing Page</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../marketing/collective-copy.html"
+                    >Collective: Blockchain News App</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../marketing/red-wolf-security.html"
+                    >Red Wolf Security: Small Business Website</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="webdev.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: #060da9"
+              >
+                Web Design
+              </a>
+              <ul class="dropdown-menu" style="border-color: #060da9">
+                <li>
+                  <a class="dropdown-item" href="webdev.html">Overview</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" style="border-color: #060da9" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="bound-dev.html"
+                    >Bound: Google Apps Script Mailing Service</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="collective.html"
+                    >Collective: UX/UI Design</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html"
+                    >Contact: REST MERN Application</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="red-wolf-security-dev.html"
+                    >Red Wolf Security: Figma</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="redditscraper.html"
+                    >Reddit Scraper: Python</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="nav-link" href="../contact-savva.html">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+    <main class="container pt-5">
+      <div class="row pt-5">
+        <div class="article col-sm-9 mx-auto">
+          <div class="col-sm-8 mx-auto text-center py-4">
+            <h1 class="text-center">Contact</h1>
+            <h3>An application to trade virtual business cards</h3>
+            <h4>MERN</h4>
+          </div>
+          <div class="row justify-content-center">
+            <div class="pb-4 text-center">
+              <img
+                src="../images/contact.png"
+                class="img-fluid"
+                style="border: solid 1px grey"
+              />
+            </div>
+          </div>
+          <p>
+            How it works: Users register and are prompted to create their
+            profile (Virtual Business Card.) The fields contain Name, Job title,
+            email address and telephone number. After your profile has been
+            created you can request other user’s cards by sending them a text
+            message. Your collected cards are stored in your collection to view
+            at any time you want.
+          </p>
+          <p>
+            React was used to build the front-end and an Express setup was used
+            for the back-end. An SMS API called Twilio was used for the trading
+            aspect between users. The app uses a form to create the user’s own
+            personalised card, allowing them to choose the font, font colour and
+            card colour for their business card. The card also includes links to
+            the users LinkedIn and Twitter profiles if they wish to add them.
+            I’m particularly happy with the styling for this project; the card
+            is updated live as the user fills out their customisation options
+            using inline styles. When a user trades a card with another user,
+            both cards are added to the respective user’s index; this was done
+            through a function called cardsTrade in the controller for the
+            cards. Technologies include: React, Express, JavaScript, jQuery,
+            HTML, SASS, Bootstrap, Web Hack, npm, Yarn, Git, Github, Heroku,
+            Insomnia, mocha, chai.
+          </p>
+          <div class="row justify-content-center">
+            <div class="col-sm-7 pt-4 text-center">
+              <img
+                src="../images/Contact-inline-style.png"
+                class="img-fluid"
+                style="border: solid 1px grey"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-7 pt-4 text-center">
+              <img
+                src="../images/contact-inline-style2.png"
+                class="img-fluid"
+                style="border: solid 1px grey"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-7 pt-4 text-center">
+              <img
+                src="../images/contact-inline-style3.png"
+                class="img-fluid"
+                style="border: solid 1px grey"
+              />
+            </div>
+          </div>
+          <p class="text-center" style="font-style: italic">
+            Inline Styling Code to update the changes to the card live
+          </p>
+          <p>
+            The points mentioned above are how far I got developing the app as
+            an MVP. Ideally you’d want a smoother user experience, one that
+            doesn’t involve entering the persons phone number in order to trade
+            cards. If I were to continue building this app, the next iteration
+            would have an API which uses Near Field Communication technology
+            instead of the Twilio API for the Cards to be traded “between
+            devices” at close proximity. I would also develop this iteration
+            mobile-first.
+          </p>
+        </div>
+      </div>
+      <div class="row py-5" style="font-family: 'DM Sans', sans-serif"></div>
+    </main>
+    <section style="width: 100%; border-top: solid 1px #060da9">
+      <div class="container">
+        <footer class="row">
+          <div class="col p-4">
+            <p class="text-muted text-center" style="font-size: medium">
+              Reach me at
+              <a
+                style="text-decoration: none; color: #060da9"
+                href="mailto:savva.lambin@gmail.com"
+                >savva.lambin@gmail.com</a
+              >
+            </p>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
