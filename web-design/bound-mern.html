@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MERN Application</title>
+    <title>Living Carbon</title>
     <link rel="icon" href="../images/portfolio-tab.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lexend+Deca:wght@800&family=Work+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lexend+Deca:wght@800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -164,89 +164,29 @@
         </div>
       </div>
     </nav>
-    <main class="container pt-5">
-      <div class="row pt-5">
-        <div class="article col-sm-9 mx-auto">
-          <div class="col-sm-8 mx-auto text-center py-4">
-            <h1 class="text-center">Contact</h1>
-            <h3>An application to trade virtual business cards</h3>
-            <h4>MERN</h4>
-          </div>
-          <div class="row justify-content-center">
-            <div class="pb-4 text-center">
-              <img
-                src="../images/contact.png"
-                class="img-fluid"
-                style="border: solid 1px grey"
-              />
+    <main class="container pt-5" style="height: 100vh">
+      <div class="row mt-5">
+        <div class="article col-sm-9 mx-auto align-items-center">
+          <div class="text-center py-4">
+            <div class="project-logo col-sm-5 mx-auto">
+              <img src="../images/lc2-logo.svg" class="img-fluid pb-4" />
+              <h3>MERN REST API for Bound Network</h3>
             </div>
           </div>
-          <p>
-            How it works: Users register and are prompted to create their
-            profile (Virtual Business Card.) The fields contain Name, Job title,
-            email address and telephone number. After your profile has been
-            created you can request other user’s cards by sending them a text
-            message. Your collected cards are stored in your collection to view
-            at any time you want.
+          <p class="text-center">
+            Bound is a networking app for digital creatives. Built using the
+            MERN stack and REST API architecture.
           </p>
-          <p>
-            React was used to build the front-end and an Express setup was used
-            for the back-end. An SMS API called Twilio was used for the trading
-            aspect between users. The app uses a form to create the user’s own
-            personalised card, allowing them to choose the font, font colour and
-            card colour for their business card. The card also includes links to
-            the users LinkedIn and Twitter profiles if they wish to add them.
-            I’m particularly happy with the styling for this project; the card
-            is updated live as the user fills out their customisation options
-            using inline styles. When a user trades a card with another user,
-            both cards are added to the respective user’s index; this was done
-            through a function called cardsTrade in the controller for the
-            cards. Technologies include: React, Express, JavaScript, jQuery,
-            HTML, SASS, Bootstrap, Web Hack, npm, Yarn, Git, Github, Heroku,
-            Insomnia, mocha, chai.
-          </p>
-          <div class="row justify-content-center">
-            <div class="col-sm-7 pt-4 text-center">
-              <img
-                src="../images/Contact-inline-style.png"
-                class="img-fluid"
-                style="border: solid 1px grey"
-              />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-sm-7 pt-4 text-center">
-              <img
-                src="../images/contact-inline-style2.png"
-                class="img-fluid"
-                style="border: solid 1px grey"
-              />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-sm-7 pt-4 text-center">
-              <img
-                src="../images/contact-inline-style3.png"
-                class="img-fluid"
-                style="border: solid 1px grey"
-              />
-            </div>
-          </div>
-          <p class="text-center" style="font-style: italic">
-            Inline Styling Code to update the changes to the card live
-          </p>
-          <p>
-            The points mentioned above are how far I got developing the app as
-            an MVP. Ideally you’d want a smoother user experience, one that
-            doesn’t involve entering the persons phone number in order to trade
-            cards. If I were to continue building this app, the next iteration
-            would use Near Field Communication technology instead of the Twilio
-            API for the Cards to be traded “between devices” at close proximity.
-            I would also develop this iteration mobile-first.
+          <p class="text-center">
+            <a
+              class="text-center"
+              target="_blank"
+              href="https://github.com/LaSav/bound-rest"
+              >Github Repo</a
+            >
           </p>
         </div>
       </div>
-      <div class="row py-5" style="font-family: 'DM Sans', sans-serif"></div>
     </main>
     <section style="width: 100%; border-top: solid 1px #1e89c8">
       <div class="container">

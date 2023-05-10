@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #fafafa;
     font-family: 'DM Sans', sans-serif;
     line-height: 1.6;
 }
@@ -35,23 +35,24 @@ font-weight: 800;
 
 #btn {
   border-radius: 0%;
-  border-color: white;
-  color: white;
+  border-color: #fafafa;
+  color: #fafafa;
 }
 
 #btn:hover {
-  color:#0DA906;
+  color:#5bc2aa;
 }
 
 #btn-nav {
   border-radius: 0%;
-  border-color: white;
-  color: white;
+  border-color: #fafafa;
+  color: #fafafa;
 }
 
 #btn-nav:hover {
-  color: black;
+  color: #252525;
 }
+
 
 #about-button {
   border-radius: 0%;
@@ -60,8 +61,8 @@ font-weight: 800;
 }
 
 #about-button:hover {
-  color: white;
-  background-color: black;
+  color: #fafafa;
+  background-color: #252525;
 }
 
 
@@ -74,7 +75,7 @@ font-weight: 800;
 .contact-content {
   font-family: 'DM Sans', sans-serif;
   font-size: 3vh;
-  color: white;
+  color: #fafafa;
 
 }
 
@@ -82,21 +83,21 @@ font-weight: 800;
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color:  #060DA9;
+    color:  #1e89c8;
   }
 
 .copy-link {
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color: #a9060d;
+    color: #ff6e63;
   }
 
   .dev-link {
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color:#060DA9;
+    color:#1e89c8;
   }
   
 
@@ -106,7 +107,7 @@ font-weight: 800;
   }
 
   .project-link-dev:hover {
-    color:  #060DA9;
+    color:  #1e89c8;
   }
 
   .project-link-dev {
@@ -115,11 +116,11 @@ font-weight: 800;
     }
   
     .project-link:hover {
-      color:  #a9060d;
+      color:  #ff6e63;
     }
 
   .article-link:hover {
-    color: #060DA9;
+    color: #1e89c8;
   }
   
   .article-link:after {
@@ -130,7 +131,7 @@ font-weight: 800;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #060DA9;
+    background-color: #1e89c8;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -138,7 +139,7 @@ font-weight: 800;
   .article-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    color: #060DA9;
+    color: #1e89c8;
   }
 
 
@@ -150,7 +151,7 @@ font-weight: 800;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #a9060d;
+    background-color: #ff6e63;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -158,11 +159,11 @@ font-weight: 800;
   .copy-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    color: #a9060d;
+    color: #ff6e63;
   }
 
   .copy-link:hover {
-      color: #a9060d;
+      color: #ff6e63;
   }
 
   .dev-link:after {
@@ -173,7 +174,7 @@ font-weight: 800;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #060DA9;
+    background-color: #1e89c8;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -181,11 +182,11 @@ font-weight: 800;
   .dev-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    color: #060DA9;
+    color: #1e89c8;
   }
 
   .dev-link:hover {
-      color: #060DA9;
+      color: #1e89c8;
   }
 
   .article {
@@ -207,7 +208,7 @@ font-weight: 800;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: #fafafa;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -215,7 +216,7 @@ font-weight: 800;
   .menu-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    color: white;
+    color: #fafafa;
   }
 
   .home-link {
@@ -232,7 +233,7 @@ font-weight: 800;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: #fafafa;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -240,18 +241,11 @@ font-weight: 800;
   .home-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    color: white;
+    color: #fafafa;
   }
 
   .article-link:hover {
-      color:   #060DA9;
-  }
-
-  .about-sub {
-    color: black;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+      color:   #1e89c8;
   }
 
   .copy-thumb {
@@ -259,7 +253,7 @@ font-weight: 800;
   }
 
   .copy-thumb:hover {
-    border: 2px solid #a9060d;
+    border: 2px solid #ff6e63;
   }
 
   .dev-thumb {
@@ -267,18 +261,18 @@ font-weight: 800;
   }
 
   .dev-thumb:hover {
-    border: 2px solid #060DA9;
+    border: 2px solid #1e89c8;
   }
 
   .about-side-text {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    color: white; 
+    color: #fafafa; 
     font-size: 3vh
   }
 
   .contact-content-mail {
-    color:white; 
+    color:#fafafa; 
     text-decoration: none;
   }
 
@@ -291,28 +285,28 @@ font-weight: 800;
 }
 
 .inner {
-  background: linear-gradient(to right, #060DA9 50%, transparent 0);
+  background: linear-gradient(to right, #1e89c8 50%, transparent 0);
   background-size: 200% 100%;
   background-position: right;
   animation: makeItfadeIn 1.5s forwards;
 }
 
 .inner2 {
-  background: linear-gradient(to right, #ee0812 50%, transparent 0);
+  background: linear-gradient(to right, #ff6e63 50%, transparent 0);
   background-size: 200% 100%;
   background-position: right;
   animation: makeItfadeIn2 1.5s forwards;
 }
 
 .inner3 {
-  background: linear-gradient(to bottom, #0DA906 50%, transparent 0);
+  background: linear-gradient(to bottom, #5bc2aa 50%, transparent 0);
   background-size: 100% 200%;
   background-position: bottom;
   animation: makeItfadeIn3 1.55s forwards;
 }
 
 .inner4 {
-  background: linear-gradient(to top, black 50%, transparent 0);
+  background: linear-gradient(to top, #252525 50%, transparent 0);
   background-size: 100% 200%;
   background-position: top;
   animation: makeItfadeIn4 1.55s forwards;
@@ -326,7 +320,7 @@ font-weight: 800;
   /* animation: color-change 10s infinite; */
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 800;
-  color: white;
+  color: #fafafa;
 }
 
 /* @keyframes color-change {
@@ -336,7 +330,7 @@ font-weight: 800;
 } */
 
 .navbar {
-  background-color: white;
+  background-color: #fafafa;
 }
 
 .dropdown-menu {
@@ -405,7 +399,7 @@ ul {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #060DA9;
+  background-color: #1e89c8;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -413,7 +407,7 @@ ul {
 .list-item2 a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-  color: #060DA9;
+  color: #1e89c8;
 }
 
 .ticker {
@@ -502,7 +496,7 @@ ul {
     color: black;
   }
   .about-side {
-    background-color: white;
+    background-color: #fafafa;
   }
   .contact-content-mail {
     color:black; 
@@ -514,10 +508,10 @@ ul {
     color: black;
   } 
   #btn-nav:hover {
-    color: white;
+    color: black;
   }
   .outer {
-    background-color: white;
+    background-color: #fafafa;
   }
   .skill-row {
     height: 100%;
