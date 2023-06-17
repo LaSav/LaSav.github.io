@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MERN Application</title>
+    <title>Python Scraping Project</title>
     <link rel="icon" href="../images/portfolio-tab.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lexend+Deca:wght@800&family=Work+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lexend+Deca:wght@800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -50,17 +50,17 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="../copywriting/overview.html"
+                href="../blog/overview.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 style="color: black"
               >
-                Copywriting
+                Blog
               </a>
               <ul class="dropdown-menu" style="border-color: black">
                 <li>
-                  <a class="dropdown-item" href="../copywriting/overview.html"
+                  <a class="dropdown-item" href="../blog/overview.html"
                     >Overview</a
                   >
                 </li>
@@ -70,40 +70,34 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="../copywriting/copywriting-modern-marketings-glue.html"
+                    href="../blog/copywriting-modern-marketings-glue.html"
                     >Modern Marketing's Glue</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../copywriting/living-carbon.html"
+                  <a class="dropdown-item" href="../blog/living-carbon.html"
                     >Living Carbon: Offsetting Carbon Footprints</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="../copywriting/the-value-in-validating-your-product.html"
+                    href="../blog/the-value-in-validating-your-product.html"
                     >The Value in Validating Your Product</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../copywriting/bound-copy.html"
+                  <a class="dropdown-item" href="../blog/bound-copy.html"
                     >Bound: SaaS Startup Landing Page</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../copywriting/collective-copy.html"
+                  <a class="dropdown-item" href="../blog/collective-copy.html"
                     >Collective: Blockchain News App</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../copywriting/red-wolf-security.html"
+                  <a class="dropdown-item" href="../blog/red-wolf-security.html"
                     >Red Wolf Security: Small Business Website</a
                   >
                 </li>
@@ -118,7 +112,7 @@
                 aria-expanded="false"
                 style="color: #1e89c8"
               >
-                Web Design
+                Projects
               </a>
               <ul class="dropdown-menu" style="border-color: #1e89c8">
                 <li>
@@ -177,83 +171,68 @@
     <main class="container pt-5">
       <div class="row pt-5">
         <div class="article col-sm-9 mx-auto">
-          <div class="col-sm-8 mx-auto text-center py-4">
-            <h1 class="text-center">Contact</h1>
-            <h3>An application to trade virtual business cards</h3>
-            <h4>MERN</h4>
-          </div>
-          <div class="row justify-content-center">
-            <div class="pb-4 text-center">
+          <div class="text-center py-4">
+            <div class="project-logo col-sm-5 mx-auto">
               <img
-                src="../images/contact.png"
-                class="img-fluid"
-                style="border: solid 1px grey"
+                src="../images/reddit-icon.png"
+                class="img-fluid pb-4"
+                style="width: 150px"
               />
+              <h3>Search Subreddits Using Keywords</h3>
+              <h4>Python</h4>
             </div>
           </div>
           <p>
-            How it works: Users register and are prompted to create their
-            profile (Virtual Business Card.) The fields contain Name, Job title,
-            email address and telephone number. After your profile has been
-            created you can request other user’s cards by sending them a text
-            message. Your collected cards are stored in your collection to view
-            at any time you want.
+            A friend of mine approached me to create a reddit scraper. He wanted
+            a way to search through posts, comments and replies in the
+            r/wallstreetbets subreddit and return the ones containing specified
+            financial key terms.
           </p>
           <p>
-            React was used to build the front-end and an Express setup was used
-            for the back-end. An SMS API called Twilio was used for the trading
-            aspect between users. The app uses a form to create the user’s own
-            personalised card, allowing them to choose the font, font colour and
-            card colour for their business card. The card also includes links to
-            the users LinkedIn and Twitter profiles if they wish to add them.
-            I’m particularly happy with the styling for this project; the card
-            is updated live as the user fills out their customisation options
-            using inline styles. When a user trades a card with another user,
-            both cards are added to the respective user’s index; this was done
-            through a function called cardsTrade in the controller for the
-            cards. Technologies include: React, Express, JavaScript, jQuery,
-            HTML, SASS, Bootstrap, Web Hack, npm, Yarn, Git, Github, Heroku,
-            Insomnia, mocha, chai.
+            I used the PRAW module in Python to use the Reddit API and then
+            converted the data into an excel spread sheet to send on to him. If
+            I were to have more time, I would have designed my own API and a web
+            page interface for the user to input the keywords themselves.
           </p>
           <div class="row justify-content-center">
-            <div class="col-sm-7 pt-4 text-center">
+            <div class="pt-4 text-center">
               <img
-                src="../images/Contact-inline-style.png"
+                src="../images/python-code.png"
                 class="img-fluid"
                 style="border: solid 1px grey"
               />
             </div>
+            <p class="text-center" style="font-style: italic">
+              Python code using the PRAW module to search through posts containg
+              the keyword "beta." posts, url and postNumber are stored in empty
+              list variables which are then used with the xlsxwriter module to
+              create an xlsx file.
+            </p>
           </div>
           <div class="row justify-content-center">
-            <div class="col-sm-7 pt-4 text-center">
+            <div class="col pt-4 text-center">
               <img
-                src="../images/contact-inline-style2.png"
+                src="../images/python-terminal-data.png"
                 class="img-fluid"
                 style="border: solid 1px grey"
               />
             </div>
+            <p class="text-center" style="font-style: italic">
+              Testing the retrieved data in the terminal
+            </p>
           </div>
           <div class="row justify-content-center">
-            <div class="col-sm-7 pt-4 text-center">
+            <div class="col pt-4 text-center">
               <img
-                src="../images/contact-inline-style3.png"
+                src="../images/python-xlsx.png"
                 class="img-fluid"
                 style="border: solid 1px grey"
               />
             </div>
+            <p class="text-center" style="font-style: italic">
+              xslx file created
+            </p>
           </div>
-          <p class="text-center" style="font-style: italic">
-            Inline Styling Code to update the changes to the card live
-          </p>
-          <p>
-            The points mentioned above are how far I got developing the app as
-            an MVP. Ideally you’d want a smoother user experience, one that
-            doesn’t involve entering the persons phone number in order to trade
-            cards. If I were to continue building this app, the next iteration
-            would use Near Field Communication technology instead of the Twilio
-            API for the Cards to be traded “between devices” at close proximity.
-            I would also develop this iteration mobile-first.
-          </p>
         </div>
       </div>
       <div class="row py-5" style="font-family: 'DM Sans', sans-serif"></div>

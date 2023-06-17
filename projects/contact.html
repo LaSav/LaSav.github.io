@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bound Landing Page</title>
+    <title>MERN Application</title>
     <link rel="icon" href="../images/portfolio-tab.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -13,15 +13,19 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lexend+Deca:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lexend+Deca:wght@800&family=Work+Sans&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <nav
       class="navbar navbar-expand-lg fixed-top"
-      style="border-bottom: solid 1px #ff6e63"
+      style="border-bottom: solid 1px #1e89c8"
       data-aos="fade-down"
       data-aos-delay="1500"
     >
@@ -46,52 +50,54 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="overview.html"
+                href="../blog/overview.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="color: #ff6e63"
+                style="color: black"
               >
-                Copywriting
+                Blog
               </a>
-              <ul class="dropdown-menu" style="border-color: #ff6e63">
+              <ul class="dropdown-menu" style="border-color: black">
                 <li>
-                  <a class="dropdown-item" href="overview.html">Overview</a>
+                  <a class="dropdown-item" href="../blog/overview.html"
+                    >Overview</a
+                  >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" style="border-color: #ff6e63" />
+                  <hr class="dropdown-divider" style="border-color: black" />
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="copywriting-modern-marketings-glue.html"
+                    href="../blog/copywriting-modern-marketings-glue.html"
                     >Modern Marketing's Glue</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="living-carbon.html"
+                  <a class="dropdown-item" href="../blog/living-carbon.html"
                     >Living Carbon: Offsetting Carbon Footprints</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="the-value-in-validating-your-product.html"
+                    href="../blog/the-value-in-validating-your-product.html"
                     >The Value in Validating Your Product</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="bound-copy.html"
+                  <a class="dropdown-item" href="../blog/bound-copy.html"
                     >Bound: SaaS Startup Landing Page</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="collective-copy.html"
+                  <a class="dropdown-item" href="../blog/collective-copy.html"
                     >Collective: Blockchain News App</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="red-wolf-security.html"
+                  <a class="dropdown-item" href="../blog/red-wolf-security.html"
                     >Red Wolf Security: Small Business Website</a
                   >
                 </li>
@@ -104,18 +110,16 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="color: black"
+                style="color: #1e89c8"
               >
-                Web Design
+                Projects
               </a>
-              <ul class="dropdown-menu" style="border-color: black">
+              <ul class="dropdown-menu" style="border-color: #1e89c8">
                 <li>
-                  <a class="dropdown-item" href="../web-design/overview.html"
-                    >Overview</a
-                  >
+                  <a class="dropdown-item" href="overview.html">Overview</a>
                 </li>
                 <li>
-                  <hr class="dropdown-divider" style="border-color: black" />
+                  <hr class="dropdown-divider" style="border-color: #1e89c8" />
                 </li>
                 <li>
                   <a class="dropdown-item" href="bound-mern.html"
@@ -133,31 +137,27 @@
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../web-design/living-carbon.html"
+                  <a class="dropdown-item" href="living-carbon.html"
                     >Living Carbon: Offsetting Carbon Footprints</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../web-design/bound-dev.html"
+                  <a class="dropdown-item" href="bound-dev.html"
                     >Bound: Google Apps Script Mailing Service</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../web-design/collective.html"
+                  <a class="dropdown-item" href="collective.html"
                     >Collective: UX/UI Design</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../web-design/contact.html"
+                  <a class="dropdown-item" href="contact.html"
                     >Contact: REST MERN Application</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../web-design/redditscraper.html"
+                  <a class="dropdown-item" href="redditscraper.html"
                     >Reddit Scraper: Python</a
                   >
                 </li>
@@ -168,62 +168,98 @@
         </div>
       </div>
     </nav>
-    <main class="container py-5">
-      <div class="row pt-3">
+    <main class="container pt-5">
+      <div class="row pt-5">
         <div class="article col-sm-9 mx-auto">
-          <div class="text-center py-4">
-            <div class="project-logo col-sm-5 mx-auto">
+          <div class="col-sm-8 mx-auto text-center py-4">
+            <h1 class="text-center">Contact</h1>
+            <h3>An application to trade virtual business cards</h3>
+            <h4>MERN</h4>
+          </div>
+          <div class="row justify-content-center">
+            <div class="pb-4 text-center">
               <img
-                src="../images/bound-logo.svg"
+                src="../images/contact.png"
                 class="img-fluid"
-                style="padding-left: 45px"
+                style="border: solid 1px grey"
               />
-              <h2>Bound Network</h2>
-              <h3>Startup Landing Page with Email Announcements</h3>
-              <a href="https://www.boundnetwork.com" target="_blank"
-                >www.boundnetwork.com</a
-              >
             </div>
           </div>
           <p>
-            A landing page to validate a creative directory app pre development.
+            How it works: Users register and are prompted to create their
+            profile (Virtual Business Card.) The fields contain Name, Job title,
+            email address and telephone number. After your profile has been
+            created you can request other user’s cards by sending them a text
+            message. Your collected cards are stored in your collection to view
+            at any time you want.
           </p>
-
+          <p>
+            React was used to build the front-end and an Express setup was used
+            for the back-end. An SMS API called Twilio was used for the trading
+            aspect between users. The app uses a form to create the user’s own
+            personalised card, allowing them to choose the font, font colour and
+            card colour for their business card. The card also includes links to
+            the users LinkedIn and Twitter profiles if they wish to add them.
+            I’m particularly happy with the styling for this project; the card
+            is updated live as the user fills out their customisation options
+            using inline styles. When a user trades a card with another user,
+            both cards are added to the respective user’s index; this was done
+            through a function called cardsTrade in the controller for the
+            cards. Technologies include: React, Express, JavaScript, jQuery,
+            HTML, SASS, Bootstrap, Web Hack, npm, Yarn, Git, Github, Heroku,
+            Insomnia, mocha, chai.
+          </p>
           <div class="row justify-content-center">
-            <div class="pt-4 text-center">
-              <img src="../images/bound-index-1.png" class="img-fluid" />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="pt-4 text-center">
-              <img src="../images/bound-index-2.png" class="img-fluid" />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="pt-4 text-center">
-              <img src="../images/bound-about.png" class="img-fluid" />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="pt-4 text-center">
+            <div class="col-sm-7 pt-4 text-center">
               <img
-                src="../images/bound-email.png"
+                src="../images/Contact-inline-style.png"
                 class="img-fluid"
-                style="border: solid 1px gray"
+                style="border: solid 1px grey"
               />
             </div>
           </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-7 pt-4 text-center">
+              <img
+                src="../images/contact-inline-style2.png"
+                class="img-fluid"
+                style="border: solid 1px grey"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-7 pt-4 text-center">
+              <img
+                src="../images/contact-inline-style3.png"
+                class="img-fluid"
+                style="border: solid 1px grey"
+              />
+            </div>
+          </div>
+          <p class="text-center" style="font-style: italic">
+            Inline Styling Code to update the changes to the card live
+          </p>
+          <p>
+            The points mentioned above are how far I got developing the app as
+            an MVP. Ideally you’d want a smoother user experience, one that
+            doesn’t involve entering the persons phone number in order to trade
+            cards. If I were to continue building this app, the next iteration
+            would use Near Field Communication technology instead of the Twilio
+            API for the Cards to be traded “between devices” at close proximity.
+            I would also develop this iteration mobile-first.
+          </p>
         </div>
       </div>
+      <div class="row py-5" style="font-family: 'DM Sans', sans-serif"></div>
     </main>
-    <section style="width: 100%; border-top: solid 1px #ff6e63">
+    <section style="width: 100%; border-top: solid 1px #1e89c8">
       <div class="container">
         <footer class="row">
           <div class="col p-4">
             <p class="text-muted text-center" style="font-size: medium">
               Reach me at
               <a
-                style="text-decoration: none; color: #ff6e63"
+                style="text-decoration: none; color: #1e89c8"
                 href="mailto:savva.lambin@gmail.com"
                 >savva.lambin@gmail.com</a
               >

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Living Carbon</title>
+    <title>MongoDB + Postmark Interface</title>
     <link rel="icon" href="../images/portfolio-tab.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -25,7 +25,7 @@
   <body>
     <nav
       class="navbar navbar-expand-lg fixed-top"
-      style="border-bottom: solid 1px #ff6e63"
+      style="border-bottom: solid 1px #1e89c8"
       data-aos="fade-down"
       data-aos-delay="1500"
     >
@@ -50,52 +50,54 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="overview.html"
+                href="../blog/overview.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="color: #ff6e63"
+                style="color: black"
               >
-                Copywriting
+                Blog
               </a>
-              <ul class="dropdown-menu" style="border-color: #ff6e63">
+              <ul class="dropdown-menu" style="border-color: black">
                 <li>
-                  <a class="dropdown-item" href="overview.html">Overview</a>
+                  <a class="dropdown-item" href="../blog/overview.html"
+                    >Overview</a
+                  >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" style="border-color: #ff6e63" />
+                  <hr class="dropdown-divider" style="border-color: black" />
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="copywriting-modern-marketings-glue.html"
+                    href="../blog/copywriting-modern-marketings-glue.html"
                     >Modern Marketing's Glue</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="living-carbon.html"
+                  <a class="dropdown-item" href="../blog/living-carbon.html"
                     >Living Carbon: Offsetting Carbon Footprints</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="the-value-in-validating-your-product.html"
+                    href="../blog/the-value-in-validating-your-product.html"
                     >The Value in Validating Your Product</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="bound-copy.html"
+                  <a class="dropdown-item" href="../blog/bound-copy.html"
                     >Bound: SaaS Startup Landing Page</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="collective-copy.html"
+                  <a class="dropdown-item" href="../blog/collective-copy.html"
                     >Collective: Blockchain News App</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="red-wolf-security.html"
+                  <a class="dropdown-item" href="../blog/red-wolf-security.html"
                     >Red Wolf Security: Small Business Website</a
                   >
                 </li>
@@ -108,18 +110,16 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="color: black"
+                style="color: #1e89c8"
               >
-                Web Design
+                Projects
               </a>
-              <ul class="dropdown-menu" style="border-color: black">
+              <ul class="dropdown-menu" style="border-color: #1e89c8">
                 <li>
-                  <a class="dropdown-item" href="../web-design/overview.html"
-                    >Overview</a
-                  >
+                  <a class="dropdown-item" href="overview.html">Overview</a>
                 </li>
                 <li>
-                  <hr class="dropdown-divider" style="border-color: black" />
+                  <hr class="dropdown-divider" style="border-color: #1e89c8" />
                 </li>
                 <li>
                   <a class="dropdown-item" href="bound-mern.html"
@@ -137,31 +137,27 @@
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../web-design/living-carbon.html"
+                  <a class="dropdown-item" href="living-carbon.html"
                     >Living Carbon: Offsetting Carbon Footprints</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../web-design/bound-dev.html"
+                  <a class="dropdown-item" href="bound-dev.html"
                     >Bound: Google Apps Script Mailing Service</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../web-design/collective.html"
+                  <a class="dropdown-item" href="collective.html"
                     >Collective: UX/UI Design</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../web-design/contact.html"
+                  <a class="dropdown-item" href="contact.html"
                     >Contact: REST MERN Application</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../web-design/redditscraper.html"
+                  <a class="dropdown-item" href="redditscraper.html"
                     >Reddit Scraper: Python</a
                   >
                 </li>
@@ -172,39 +168,63 @@
         </div>
       </div>
     </nav>
-    <main class="container pt-5" style="height: 100vh">
+    <main class="container pt-5">
       <div class="row mt-5">
         <div class="article col-sm-9 mx-auto align-items-center">
-          <div class="text-center py-4">
+          <div class="text-center pt-4">
             <div class="project-logo col-sm-5 mx-auto">
-              <img src="../images/lc2-logo.svg" class="img-fluid pb-4" />
-              <h3>Environmental Business Website</h3>
-              <a target="_blank" href="https://living-carbon-demo.netlify.app/"
-                >Living Carbon International</a
-              >
+              <h3>A Local Interface to Send Emails with Postmark</h3>
             </div>
+            <a
+              target="_blank"
+              href="https://github.com/LaSav/postmark-interface"
+              ><img
+                src="../images/github-mark.svg"
+                style="height: 7vh"
+                alt=""
+                class="text-center m-3"
+            /></a>
           </div>
-          <p class="text-center">
-            Living Carbon is an environmental company offering Carbon Offset
-            Solutions.
+          <p class="text-center mb-4">
+            This is a REST API built to be used locally on your machine to
+            manage subscribers from your mailing list (MongoDB Collection) and
+            send Broadcast Emails using the Postmark API.
           </p>
-          <p class="text-center">
-            This project consisted of migrating, then editing previous content;
-            including appropriate User Experience prompts to increase
-            accessibilty of the company's values and services to a business
-            audience effectively.
+          <div class="pb-5 text-center">
+            <img
+              src="../images/postmark-interface.png"
+              class="img-fluid"
+              style="border: solid 1px grey"
+            />
+          </div>
+          <p>
+            The application receives your subscriber data from MongoDB and
+            parses the JSON information into a table. You can then send an email
+            to each subscriber with a postmark templated email by inputing the
+            id of the template you created in the postmark dashboard.
+          </p>
+          <p>
+            I chose to use postmark for their features like open and click
+            tracking, custom email templates, spam filtering and bounce
+            handling.
+          </p>
+          <p class="mb-5">
+            This project was built to manage subscriptions from an application
+            which signs subscribers up and stores them in a MongoDB collection.
+            You can view the sister project
+            <a target="_blank" href="bound-landing-page.html">here.</a>
           </p>
         </div>
       </div>
     </main>
-    <section style="width: 100%; border-top: solid 1px #ff6e63">
+    <section style="width: 100%; border-top: solid 1px #1e89c8">
       <div class="container">
         <footer class="row">
           <div class="col p-4">
             <p class="text-muted text-center" style="font-size: medium">
               Reach me at
               <a
-                style="text-decoration: none; color: #ff6e63"
+                style="text-decoration: none; color: #1e89c8"
                 href="mailto:savva.lambin@gmail.com"
                 >savva.lambin@gmail.com</a
               >
