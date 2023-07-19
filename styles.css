@@ -5,32 +5,32 @@ body {
 }
 
 .home {
-    font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Poppins', sans-serif;
     font-size: 4.2vh;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .home-sub {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3vh;
   display: inline-block;
   padding-bottom: 0px;
-  font-weight: 800;
+  font-weight: 500;
 
 }
 
 .index-title {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12vh;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .index-sub {
-font-family: 'Lexend Deca', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-size: 8vh;
 display: inline-block;
 padding-bottom: 0px;
-font-weight: 800;
+font-weight: 500;
 }
 
 #btn {
@@ -68,7 +68,7 @@ font-weight: 800;
 
 .index-content {
   font-family: 'DM Sans', sans-serif;
-  font-size: 4vh;
+  font-size: 3vh;
   color: black;
 }
 
@@ -265,7 +265,7 @@ font-weight: 800;
   }
 
   .about-side-text {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fafafa; 
     font-size: 3vh
@@ -318,8 +318,8 @@ font-weight: 800;
 
 .heading-anim {
   /* animation: color-change 10s infinite; */
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   color: #fafafa;
 }
 
