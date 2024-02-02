@@ -427,6 +427,7 @@ ul {
   animation-delay: 6s;
 }
 
+
 @keyframes ticker {
   0% {
     transform: translate(0, 0);
@@ -476,6 +477,9 @@ ul {
   }
   .about-side {
     background-color: black;
+  }
+  .about-hero {
+    height: 90vh;
   }
   .contact-content {
     font-size: 16px;
