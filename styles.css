@@ -74,7 +74,7 @@ font-weight: 500;
 
 .contact-content {
   font-family: 'DM Sans', sans-serif;
-  font-size: 3vh;
+  font-size: 18px;
   color: #fafafa;
 
 }
@@ -462,7 +462,7 @@ ul {
   }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 768px) {
   .index-title {
     font-size: 11vh;
   }
@@ -482,7 +482,7 @@ ul {
     height: 90vh;
   }
   .contact-content {
-    font-size: 16px;
+    font-size: 15px;
   }
   .copy-thumb {
     border-radius: 10px;
@@ -520,6 +520,8 @@ ul {
   .skill-row {
     height: 100%;
   }
-}
 
-  
+  .list-item2 a:after {
+    content: none;
+  }
+}
